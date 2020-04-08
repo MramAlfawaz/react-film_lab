@@ -5,8 +5,6 @@ title: React Film Lab
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Starting a Film Project Lab
 
-This project was created with `create-react-app`. 
-
 1. Start by running 
 ```yarn create react-app reactfilm```
  OR
