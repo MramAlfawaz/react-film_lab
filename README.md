@@ -7,10 +7,9 @@ title: React Film Lab
 
 This project was created with `create-react-app`. 
 
-1. Start by running `create-react-app reactfilm`
-
+1. Start by running 
 ```yarn create react-app reactfilm```
-OR
+ OR
 ```npm init react-app reactfilm```
 
 1. Copy and replace your `index.css` with the one in this project
