@@ -8,6 +8,7 @@ title: React Film Lab
 This project was created with `create-react-app`. 
 
 1. Start by running `create-react-app reactfilm`
+
 ```yarn create react-app reactfilm```
 OR
 ```npm init react-app reactfilm```
