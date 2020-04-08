@@ -13,6 +13,7 @@ OR
 ```npm init react-app reactfilm```
 
 1. Copy and replace your `index.css` with the one in this project
+1. Move your TMBD.js to your src file 
 
 ## Your Mission
 
