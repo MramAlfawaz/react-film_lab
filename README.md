@@ -133,3 +133,11 @@ Make each film row in the film list look like the main finished image using the 
 
 Because the poster requires you to create the URL first, move those elements to their own component (this could be reusable later). Don't forget to pass the film as a prop to the new `FilmPoster` component.
 
+
+___________________
+#### Part One complete ! 
+- Commit the day's work as : Part-1 complete
+
+![](https://i.imgur.com/JdVta3i.png)
+
+
