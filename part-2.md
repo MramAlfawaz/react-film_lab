@@ -1,4 +1,6 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Film Exercise: State
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
+
+## Film Exercise: State
 
 Your goal today is to add some events to your app. You'll keep these events simple for now; each will simply print a message to the console.
 
@@ -25,29 +27,40 @@ In the `FilmRow` component, underneath the `film-summary` `div`, render the `Fav
 
 In your browser, the icon should appear in the bottom-right corner of each film row.
 
-#### Step 2: Define a `handleClick()` Function in `Fave`
+#### Step 2: Define a `handleClick` Function in `Fave`
 
-Inside the `Fave` component, define a function called `handleClick()`. The function should accept an event (`e`) as an argument. Simply log out a message such as `"handling Fave click!"` for now.
+Inside the `Fave` component, define a function called `handleClick`. The function should accept an event (`e`) as an argument. Simply log out a message such as `"handling Fave click!"` for now.
 
 Because you aren't using this anywhere yet, nothing should change.
+
+<details>
+  <summary>Hint</summary>
+  This will look like this:
+  <code> 
+	handleClick = (e) => {
+	  
+	}
+	</code>
+</details>
 
 #### Step 3: Add an `onClick` in `Fave`
 
 Now that you have a function that handles the user clicking a movie, connect it to the UI. In the `div` of `Fave`'s `render()` function, add a parameter of `onClick={this.handleClick}`.
 
-In your browser's JavaScript console, you should see the message `handleClick()` print out when the `div` is clicked.
+In your browser's JavaScript console, you should see the message `handleClick` print out when the `div` is clicked.
 
 That's all! Your click is not yet adding favorites, but it is working. Later, you will modify your app so that, when the `Fave` icon is clicked, your app adds or removes the selected movie from the user's favorites array.
+
 
 ### Tasks — Part 2: Handling Filter Toggling
 
 Eventually, you'll want an `ALL` heading and a `FAVES` heading that are clickable links: When the user clicks `ALL`, the left sidebar will show all movies; when the user clicks `FAVES`, the left sidebar will show only their favorite movies. Now, you'll create the foundation for that functionality.
 
-#### Step 1: Define a `handleFilterClick()` Function in `FilmListing`
+#### Step 1: Define a `handleFilterClick` Function in `FilmListing`
 
 First, set up the function that will determine what movies are shown in the list. You'll need to be able to tell if you are showing the user all of the movies or if you are filtering down to show the user just some of the movies.
 
-In `FilmListing`, create a `handleFilterClick()` function that takes a string `filter` as an argument. For now, just print a message that says `Setting filter to ` and the `filter` argument.
+In `FilmListing`, create a `handleFilterClick` function that takes a string `filter` as an argument. For now, just print a message that says `Setting filter to ` and the `filter` argument.
 
 This new function isn't connected to a button in the UI yet, so nothing should change.
 
