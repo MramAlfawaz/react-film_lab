@@ -36,11 +36,7 @@ Because you aren't using this anywhere yet, nothing should change.
 <details>
   <summary>Hint</summary>
   This will look like this:
-  <code> 
-	handleClick = (e) => {
-	  
-	}
-	</code>
+  <code> handleClick = (e) => {} </code>
 </details>
 
 #### Step 3: Add an `onClick` in `Fave`
