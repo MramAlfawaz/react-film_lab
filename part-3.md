@@ -9,7 +9,7 @@ You're almost finished! Now you need to:
 
 To do this, you'll need to move your state up to the top of the component tree so that all of the data is more easily shared across components. Remember unidirectional flow: Data is going to go down the component tree, so you'll want your states to be as high up as possible.
 
-![](http://bitmakerhq.s3.amazonaws.com/resources/react-film-library-component-hierarchy.png)
+<img src="http://bitmakerhq.s3.amazonaws.com/resources/react-film-library-component-hierarchy.png" />
 
 ### Task 1: Add State to the `App` Component
 
