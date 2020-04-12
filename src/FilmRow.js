@@ -21,9 +21,10 @@ export default class FilmRow extends Component {
        <div className="film-summary">
           <h1>{this.props.title}</h1>
           <p> {this.props.year} </p>
+
        </div>
        
-       <Fave />
+       <Fave onFaveToggle={this.props.onFaveToggle} isFav={this.props.isFav} />
       
     </div>   
     
