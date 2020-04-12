@@ -217,4 +217,6 @@ Add a conditional in `FilmListing` so that, if the `filter` state is set to `fil
 
 Try it out! You should be able to add films to your favorites and view just your favorites list by clicking that tab.
 
-# Bonus: Continue to [Part 4](./part4.md)
+#### Part 3 Complete!
+- Commit the day's work as Part-3 complete 
+![](https://i.imgur.com/K4cSWzv.png)
