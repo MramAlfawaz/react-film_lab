@@ -2,9 +2,16 @@
 title: React Film Lab
 ---
 
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Starting a Film Project Lab
 
-This project was created with `create-react-app`. 
+1. Start by running 
+```yarn create react-app reactfilm```
+ OR
+```npm init react-app reactfilm```
+
+1. Copy and replace your `index.css` with the one in this project
+1. Move your TMBD.js to your src file 
 
 ## Your Mission
 
@@ -125,4 +132,12 @@ Make each film row in the film list look like the main finished image using the 
 #### Step 8: Move Film Posters to Their Own Component
 
 Because the poster requires you to create the URL first, move those elements to their own component (this could be reusable later). Don't forget to pass the film as a prop to the new `FilmPoster` component.
+
+
+___________________
+#### Part One complete ! 
+- Commit the day's work as : Part-1 complete
+
+![](https://i.imgur.com/JdVta3i.png)
+
 
