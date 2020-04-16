@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import AddToQueueIcon from '@material-ui/icons/AddToQueue'
+import RemoveFromQueue from "@material-ui/icons/RemoveFromQueue";
 
 export default class Fave extends Component {
     
@@ -25,8 +26,9 @@ const isFave = (this.props.isFave) ? 'remove_from_queue' : 'add_to_queue';
 
         return (
           
-                <div onClick= {(e) => this.handleClick(e)} className={`film-row-fave ${isFave}`}>
-    <AddToQueueIcon />
+                <div
+                onClick= {(e) => this.handleClick(e)} className={`film-row-fave ${isFave}`}>
+{this.props.isFave ? <RemoveFromQueue /> : <AddToQueueIcon />} 
 </div>
            
         )

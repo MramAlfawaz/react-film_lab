@@ -11,26 +11,36 @@ export default class FilmListing extends Component {
 
     handleFilterClick(filter){
       
-        this.setState({filter:filter})
+        this.setState({
+            filter:filter
+        })
         console.log("Setting filter to " + filter)
 
     }
 
     render() {
 
+
         let allFilms= this.props.films.map((film) => (
             <FilmRow key={film.id} 
             title={film.title} 
             onFaveToggle={() => this.props.onFaveToggle(film)}
-            year={new Date(film.release_date).getFullYear()} img={film.poster_path} />
+            year={new Date(film.release_date).getFullYear()} 
+            img={film.poster_path}
+            handleDetailsClick={() => this.props.handleDetailsClick(film)}
+            />
 
-        ));
+    ));
 
         let favFilm= this.props.faves.map((film) => (
-            <FilmRow key={film.id} 
+            <FilmRow
+            key={film.id} 
             title={film.title} 
-            onFaveToggle={this.props.onFaveToggle}
-            year={new Date(film.release_date).getFullYear()} img={film.poster_path} />
+            onFaveToggle={() => this.props.onFaveToggle(film)}
+            year={new Date(film.release_date).getFullYear()} 
+            img={film.poster_path}
+            handleDetailsClick={() => this.props.handleDetailsClick(film)}
+             />
 
         ));
 

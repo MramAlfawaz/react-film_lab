@@ -1,34 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Fave from './Fave'
 
 
-export default class FilmRow extends Component {
-
-    handleDetailsClick(film){
-
-        console.log("Fetching details for " + this.props.title)
-
-    }
+export default function FilmRow(props) {
 
 
-    render() {
+
 
         return (
 
-    <div onClick={() => this.handleDetailsClick()} className="film-row">
-        <img src={"https://image.tmdb.org/t/p/w780/"+this.props.img} />
+    <div className="film-row" onClick={props.handleDetailsClick}>
+        <img src={"https://image.tmdb.org/t/p/w780/"+props.img} />
 
-       <div className="film-summary">
-          <h1>{this.props.title}</h1>
-          <p> {this.props.year} </p>
+       <div  className="film-summary">
+          <h1>{props.title}</h1>
+          <p> {new Date(`${props.year}`).getFullYear()} </p>
 
        </div>
        
-       <Fave onFaveToggle={this.props.onFaveToggle} isFav={this.props.isFav} />
+       <Fave onFaveToggle={props.onFaveToggle} isFav={props.isFav} />
       
     </div>   
     
  
      )
     }
-}
